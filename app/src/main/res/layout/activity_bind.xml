@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <!---->
+    <data>
+        <!--指定类型的全称-->
+        <!--<variable-->
+            <!--name="stu"-->
+            <!--type="com.cy.androidarchitecturedesign.mvvmwithbind.Student"/>-->
+        <!--使用 import -->
+        <import type="com.cy.androidarchitecturedesign.mvvmwithbind.Student"/>
+        <variable
+            name="stu"
+            type="Student"/>
+
+        <!--&lt;!&ndash;绑定事件&ndash;&gt;-->
+        <variable
+            name="event"
+            type="com.cy.androidarchitecturedesign.mvvmwithbind.EventListenerImpl"/>
+
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@{stu.name}"
+            />
+
+        <TextView
+            android:id="@+id/vt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@{stu.addr}"/>
+        <TextView
+            android:id="@+id/vt7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="点我啊！！！"/>
+    </LinearLayout>
+</layout>

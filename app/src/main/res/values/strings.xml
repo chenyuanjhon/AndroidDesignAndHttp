@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidArchitectureDesign</string>
+
+
+    /****************** MVP ****************/
+    <string name="user_name">username</string>
+    <string name="password">password</string>
+    <string name="log_in">Log in</string>
+    <string name="username_error">Username cannot be empty</string>
+</resources>
